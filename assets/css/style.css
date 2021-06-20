@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* TEXT ALIGNMENT STARTS */
 .text-left {
     text-align: left;
 }
@@ -11,6 +12,7 @@
 .text-right {
     text-align: right;
 }
+/* TEXT ALIGNMENT ENDS */
 
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -89,6 +91,7 @@ section {
 }
 /* Hero Style End */
 
+/* HERO FORM STYLE STARTS */
 .hero-form {
     color: #024e76;
     background-color: #fce138;
@@ -130,7 +133,9 @@ section {
     padding: 10px 20px;
     font-size: 16px;
 }
+/* HERO FORM STYLE ENDS */
 
+/* SECTION TITLE STYLE STARTS */
 .section-title {
     font-size: 55px;
     color: #024e76;
@@ -147,7 +152,9 @@ section {
 .secondary-border {
     border-color: #39a6b2;
 }
+/* SECTION TITLE STYLE ENDS */
 
+/* WHAT WE DO STYLE STARTS */
 .intro {
     text-align: center;
 }
@@ -159,7 +166,9 @@ section {
     font-size: 20px;
     margin: 0 auto;
 }
+/* WHAT WE DO STYLE ENDS */
 
+/* WHAT YOU DO STYLE STARTS */
 .steps { 
     text-align: center;
     background: #fce138;
@@ -188,7 +197,9 @@ section {
 .steps span {
     font-size: 38px;
 }
+/* WHAT YOU DO STYLE ENDS */
 
+/* YOUR TRAINERS STYLE STARTS */
 .trainers {
     text-align: center;
 }
@@ -227,3 +238,29 @@ section {
     font-size: 17px;
     line-height: 1.3;
 }
+/* YOUR TRAINERS STYLE ENDS */
+
+/* REACH OUT STYLE STARTS */
+.contact {
+    text-align: center;
+    background: #024e76;
+}
+
+.contact h2 {
+    color: #fce138;
+}
+
+.contact-info iframe {
+    width: 400px;
+    height: 400px;
+}
+
+.contact-info div {
+    width: 410px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 30px 0 0 60px;
+    color: white;
+}
+/* REACH OUT STYLE ENDS */
