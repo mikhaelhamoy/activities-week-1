@@ -4,16 +4,6 @@
     box-sizing: border-box;
 }
 
-/* TEXT ALIGNMENT STARTS */
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-/* TEXT ALIGNMENT ENDS */
-
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: #39a6b2;
@@ -112,6 +102,7 @@ section {
     color: #fff;
     font-size: 18px;
     line-height: 1.3;
+    
 }
 
 .hero-cta h2 {
@@ -165,10 +156,11 @@ section {
 .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
   
 .primary-border {
@@ -181,9 +173,12 @@ section {
 /* SECTION TITLE STYLE ENDS */
 
 /* WHAT WE DO STYLE STARTS */
+
+/* changed to flexbox
 .intro {
     text-align: center;
 }
+*/
 
 .intro p {
     line-height: 1.7;
@@ -191,15 +186,16 @@ section {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
 }
 /* WHAT WE DO STYLE ENDS */
 
 /* WHAT YOU DO STYLE STARTS */
 .steps { 
-    text-align: center;
     background: #fce138;
 }
 
+/*
 .steps div {
     margin-bottom: 80px;
 }
@@ -208,27 +204,70 @@ section {
     width: 15%;
     margin: 10px 0;
 }
+*/
 
-.steps h3 {
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step h3 {
     color: #024e76;
     font-size: 46px;
-    margin-top: 10px;
+    flex: 1 30%;
 }
 
-.steps p {
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+.step-img img {
+    max-width: 100%;
+}
+
+.step-text {
+    flex: 12;
+}
+
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+}
+
+.step-text p {
     color: #39a6b2;
-    font-size: 23px;
+    font-size: 18px;
 }
 
+/*
 .steps span {
     font-size: 38px;
 }
+*/
 /* WHAT YOU DO STYLE ENDS */
 
 /* YOUR TRAINERS STYLE STARTS */
+
+/* changed to flexbox
 .trainers {
     text-align: center;
 }
+*/
 
 .trainer {
     width: 900px;
@@ -268,7 +307,6 @@ section {
 
 /* REACH OUT STYLE STARTS */
 .contact {
-    text-align: center;
     background: #024e76;
 }
 
@@ -306,3 +344,17 @@ section {
     color: #fce138;
 }
 /* REACH OUT STYLE ENDS */
+
+/* TEXT ALIGNMENT STARTS */
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+/* TEXT ALIGNMENT ENDS */
+
+.flex-row {
+    display: flex;
+}
